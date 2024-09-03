@@ -1,0 +1,19 @@
+*{box-sizing: border-box;}
+
+.box{
+    background-color: rgba(211, 211, 211, 0.424);
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    margin-top: 3rem;
+}
+.header{
+    background-color: rgb(187, 194, 201);
+    padding: 0.5rem;
+    font-size: larger;
+    font-weight: 600;
+}
+.text{
+    margin: 0;
+    padding: 0.5rem;
+}
