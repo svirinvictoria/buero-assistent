@@ -1,17 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Baustein.css";
 
-function Baustein({ dataItem, clickRowHandler, clicked }) {
-  
-
+function Baustein({ dataItem, clickRowHandler }) {
   return (
-    <div className="box" onClick={(e) => clickRowHandler()}>
-        <div className="header">{dataItem.title}</div>
-      {clicked?
-       <div className="text">{dataItem.content}</div>
-        : " "}
+    <div className="box" onClick={(e) => clickRowHandler(dataItem.id)}>
+      <div className="header">{dataItem.title}</div>
+      {dataItem.toggle && <div className="text">{dataItem.content}</div>}
     </div>
-  )
+  );
 }
 
 export default Baustein;
