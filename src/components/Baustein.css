@@ -5,8 +5,12 @@
     width: 70%;
     margin: auto;
     text-align: left;
-    margin-top: 3rem;
+    border-top: 1.5px solid gray;
+    border-left: 1.5px solid gray;
+    border-right: 1.5px solid gray;
 }
+.box:first-child{margin-top: 3rem;}
+.box:last-child{border-bottom: 1.5px solid gray;}
 .header{
     background-color: rgb(187, 194, 201);
     padding: 0.5rem;
