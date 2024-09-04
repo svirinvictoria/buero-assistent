@@ -1,8 +1,11 @@
+import React, { useState } from "react";
 import List from './components/List';
 import './App.css';
 
 function App() {
   
+
+
   const data =[
     {title: "Lorem Ipsum",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit nisl vitae magna venenatis venenatis. Quisque iaculis placerat massa, at facilisis diam porta fermentum. Pellentesque diam libero, lacinia id suscipit nec, efficitur a nibh. Nullam rhoncus ligula quis elit ultricies, ac feugiat elit dapibus. Nam aliquet risus vitae elementum convallis. "
@@ -18,6 +21,8 @@ function App() {
     }
     
 ]
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -25,7 +30,7 @@ function App() {
           Büro Assistent
         </p>
       </header>
-
+   
       <List data={data} />
     </div>
   );
